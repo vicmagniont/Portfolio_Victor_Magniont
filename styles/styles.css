@@ -1,0 +1,279 @@
+html{
+	margin: 0;
+	padding: 0
+}
+body{
+	margin: 0;
+	padding: 0
+}
+
+
+header{
+	height: 80vh;
+	background-color: black;
+	margin: none;
+	padding: none;
+	position: relative;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	margin-bottom: 100px;
+	z-index: 98
+}
+#pseudoheader{
+	height: 80vh;
+	width: 100%;
+	background-color: black;
+	margin: none;
+	padding: none;
+	position: absolute;
+	top:0;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	margin-bottom: 50px;
+	z-index: 97
+}
+.text{
+	padding-top: 50px;
+	padding-bottom: 30px;
+	padding-left: 23vw;
+padding-right: 23vw;
+}
+
+#pseudoheader::after{
+	content: " ";
+	display: block;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left:50%;
+	bottom: 0;
+	transform: translateX(-50%) translateY(20%) rotate(45deg);
+	background: transparent url('images/icones/download_hover.svg') no-repeat;
+	transition: 0.3s;
+	transition-timing-function: ease;
+
+
+
+
+
+	background: black;
+	z-index: 1
+}
+#pseudoheader:hover::after{
+width: 120px;
+height: 120px;
+border-radius: 0%;
+transform: translateX(-50%) translateY(120%) rotate(0deg) ;
+border-radius: 50%;
+color: none;
+background: transparent url('images/icones/down.svg') no-repeat;
+z-index: 97
+
+}
+
+
+
+#pub{
+	background-image: url(images/ice_1.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 30px;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	height: 100vh;
+	margin-top: 100px
+}
+
+		#logoanimate{
+			position: absolute;
+			top: 30vh;
+			width : 45vh
+		}
+#enter{
+
+color: white;
+transform:  translateY(750%)translateX(5%);
+font-size: 1.2em;
+font-family: "Chivo";
+font-weight: lighter;
+letter-spacing: 10px
+
+}
+
+.an:before{
+		content: 'GRAPHIC-DESIGNER';
+		font-size: 600%;
+		animation-name: head;
+		animation-duration: 4s;
+		animation-iteration-count: infinite;
+}
+
+@keyframes head {
+		0% {font-size:600%; opacity:0;}
+		1% {font-size:600%; opacity:1;}
+		5% {font-size:600%; opacity:1;}
+		6% {font-size:600%; opacity:0;}
+		20% {font-size:600%; opacity:0;}
+		21% {font-size:600%; opacity:1;content: "PHOTOG-RAPHER"}
+		25% {font-size:600%; opacity:1;}
+		26% {font-size:600%; opacity:0;}
+		40% {font-size:600%; opacity:0;}
+		41% {font-size:600%; opacity:1;content: "ARTIST (KIND OF)"}
+		45% {font-size:600%; opacity:1;}
+		46% {font-size:600%; opacity:0;}
+		60% {font-size:600%; opacity:0;}
+		61% {font-size:600%; opacity:1;content: "WEB-DESIGNER"}
+		65% {font-size:600%; opacity:1;}
+		66% {font-size:600%; opacity:0;}
+		80% {font-size:600%; opacity:0;}
+		81% {font-size:600%; opacity:1;content: "ARTISTIC-DIRECTOR"}
+		85% {font-size:600%; opacity:1;}
+		86% {font-size:600%; opacity:0;}
+		100% {font-size:600%; opacity:0;}
+}
+
+#head{
+	display: flex;
+	position: fixed;
+	flex-grow: 1;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+	z-index: 99;
+	top: 30px;
+	text-align: center;
+}
+.head{
+	align-self: center;
+	text-align: center;
+	background: black;
+padding-top : 5px;
+padding-bottom : 5px;
+padding-right: 10px;
+padding-left: 10px;
+transition: 0.5s;
+transition-timing-function: ease;
+
+border-radius: 28px;
+border: 2px solid black;
+}
+
+.head:hover{
+	background: white;
+	color: black;
+	text-decoration: line-through;
+}
+
+#work{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 0;
+	padding-left: 200px;
+	padding-right: 200px;
+	margin-bottom: 200px;
+	padding-top: 0
+}
+#mywrk{
+	margin-bottom: 60px;
+	margin-top: 80px
+}
+.workimg{
+	max-width:250px;
+	align-self: center;
+	padding: 0;
+	filter: grayscale(100);
+	transition: 0.5s;
+	transition-timing-function: ease;
+	border: 2px solid white;
+	margin-bottom: 10px;
+
+
+
+}
+.workimg:hover{
+	filter: grayscale(0);
+	border: 2px solid black
+}
+
+footer{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 0;
+	padding-left: 200px;
+	padding-right: 200px;
+	height: 200px;
+	background: black;
+	color: white;
+	font-family: 'Chivo';
+	margin-top: 100px
+}
+a{
+	color: inherit;
+	text-decoration: none;
+
+}
+
+.link:hover{
+	color: white;
+	text-decoration: line-through;
+}
+#header{
+	transition: 0.5s;
+	transition-timing-function: ease;
+}
+.link{
+	transition: 0.5s;
+	transition-timing-function: ease;
+
+}
+html{
+	scroll-behavior: smooth;
+
+}
+
+.link{
+	padding: 5px;
+	border: 2px solid white;
+	border-radius: 200px;
+	padding-left: 10px;
+	padding-right: 10px
+}
+.link:hover{
+	background: white;
+	color: black
+}
+#iii{
+	display: grid;
+	margin: 200px;
+	flex-wrap: wrap;
+	justify-content: center;
+	grid-column-gap : 2rem;
+	grid-template-columns:1fr 2fr 2fr 1fr 1fr;
+	grid-row-gap: 2rem
+}
+#i1{
+	grid-column-start: 1;
+	grid-column-start: 3;
+grid-row: 4
+
+}
+.iflex{
+	border: 1px solid black;
+	padding: 100px;
+	text-align: center;
+}
